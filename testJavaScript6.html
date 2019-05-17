@@ -1,0 +1,21 @@
+<!doctype>
+<html lang="fr">
+	<head>
+		<title>Exemple 6</title>
+		<script language="javascript">
+			function volume_sphere(rayon){
+				return 4/3*Math.PI*Math.pow(rayon,3);
+			}
+			function calculer_prix(prix_unitaire,nombre_articles){
+				return prix_unitaire*nombre_articles;
+			}
+		</script>
+	</head>
+	
+	<body>
+		<script language="javascript">
+			document.write("Tu dois me payer ",calculer_prix(150,4)," €.<br>");
+			document.write("Le volume d'une sphère de rayon 1m est de ",Math.round(volume_sphere(1)*100)/100,"m<sup>3</sup>.");
+		</script>
+	</body>
+</html>

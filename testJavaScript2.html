@@ -1,0 +1,30 @@
+<!doctype>
+<html lang="fr">
+	<head>
+		<title>Exemple 2</title>
+	</head>
+
+	<body>
+		<script>
+			var affiche="";
+			var total=7;
+			var factor=5;
+		
+			function compute(base,factor){
+				result=base*factor;
+				factor*=2;
+				var total=result+factor;
+				return total;
+				var test="ceci est un test";
+				var test2=0;
+				test2=base*factor+1;
+			}
+
+			affiche = affiche + " compute(5,4) = " + compute(5,4);
+			affiche = affiche + "\ntotal = " + total + "\nfactor = " + factor + "\nresult = " + result;
+			//affiche = affiche + "\ntest :" + test;
+			//affiche = affiche + "\ntest2 :" + test2;
+			alert(affiche);
+		</script>
+	</body>
+</html>

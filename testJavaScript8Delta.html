@@ -1,0 +1,71 @@
+<!doctype>
+<html lang="fr">
+	<head>
+		<title>Polynôme du second degré</title>
+		<script language="javascript">
+			function resoudre_dans_R(){
+				var a = document.getElementById("coef_a").value;
+				var b = document.getElementById("coef_b").value;
+				var c = document.getElementById("coef_c").value;
+					
+				if(isNaN(a) || isNaN(b) || isNaN(c)){
+					alert("Veuillez rentrer des chiffres svp.");
+				}else{
+					a=parseFloat(a);
+					b=parseFloat(b);
+					c=parseFloat(c);
+					var delta=Math.pow(b,2)-4*a*c;
+					if(delta>0){
+						alert("Il existe deux solutions :\nx1 = "+(-b-Math.sqrt(delta))/(2*a)+"\net\nx2 = "+(-b+Math.sqrt(delta))/(2*a));
+					}else if(delta==0){
+						alert("Il existe une unique solution :\nx0 = "+-b/(2*a));
+					}else{
+						alert("Il n'y a aucune solution à cette équation.");
+					}
+				}
+			}
+			
+			function resoudre_dans_C(){
+				var a = document.getElementById("coef_a").value;
+				var b = document.getElementById("coef_b").value;
+				var c = document.getElementById("coef_c").value;
+				
+				if(isNaN(a) || isNaN(b) || isNaN(c)){
+					alert("Veuillez rentrer des chiffres svp.");
+				}else{
+					a=parseFloat(a);
+					b=parseFloat(b);
+					c=parseFloat(c);
+			
+					var delta=Math.pow(b,2)-4*a*c;
+					if(delta>0){
+						alert("Il existe deux solutions :\nx1 = " + (-b-Math.sqrt(delta))/(2*a) + "\net\nx2 = " + (-b+Math.sqrt(delta))/(2*a));
+					}else if(delta==0){
+						alert("Il existe une unique solution :\nx0 = " + -b/(2*a));
+					}else{
+						alert("Il existe deux solutions :\nx1 = (" + -b + " - i * " + Math.sqrt(-delta) + ") / " + 2*a + "\net\nx2 = (" + -b + " + i * " + Math.sqrt(-delta) + ") / " + 2*a);
+					}
+				}
+			}
+		</script>
+	</head>
+	
+	<body>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<form>
+			compléter le polynôme suivant :
+			<input type="text" id="coef_a" placeholder="       a" size="5">
+			x<sup>2</sup> +
+			<input type="text" id="coef_b" placeholder="       b" size="5">
+			x +
+			<input type="text" id="coef_c" placeholder="       c" size="5">
+			 = 0
+			<br>
+			<br>
+
+			<input type="submit" onClick="resoudre_dans_R()" value="résoudre dans R">
+			<input type="submit" onClick="resoudre_dans_C()" value="résoudre dans C">
+		</form>
+	
+	</body>
+</html>

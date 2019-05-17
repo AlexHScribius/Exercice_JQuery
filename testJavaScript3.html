@@ -1,0 +1,23 @@
+<!doctype>
+<html lang="fr">
+	<head>
+		<title>Exemple 3</title>
+	</head>
+	
+	<body>
+		<script language=JavaScript>
+			var dt=new Date;
+			var jour=dt.getDay();
+			var numero=dt.getDate();
+			var mois=dt.getMonth();
+			var annee=dt.getYear()+1900;
+			
+			var tab_jour=new Array("Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi");
+			var tab_mois=new Array("Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre");
+			
+			document.write("Nous sommes le " + tab_jour[jour]+" "+numero+" "+tab_mois[mois]+" "+annee);
+			
+		</script>
+	</body>
+
+</html>
