@@ -1,0 +1,193 @@
+* {
+	font-size: 1.03em;
+	font-family: Noto Serif;
+}
+
+.tab-content {
+    margin-left: 10px solid #ddd;
+    margin-right: 10px solid #ddd;
+    padding: 10px;
+}
+
+.nav-tabs {
+    margin-bottom: 0;
+	margin-left: 7px;
+	width:98%;
+	height:100%;
+}
+
+
+.nav-tabs li{
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.nav-tabs .nav-link {
+	margin-right: 14px;
+	color: #00004d;
+	background-color: #60DCDC;
+	height:100%;
+	font-size:25px;
+	font-weight: 500;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+	border: 3px solid;
+	border-color: #e9ecef #e9ecef #60DCDC;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+	color: #00004d;
+	font-weight: 700;
+	background-color: #4CCFCF;
+	border: 6px solid;
+	border-color: #2eb8b8 #2eb8b8 #4CCFCF #2eb8b8;
+	height:109%;
+}
+
+#Calculatrice {
+	margin-right: -2px;
+	color: #00004d;
+	background-color: #6EF1B7;
+	border-color: #30EA98;
+	height:100%;
+}
+
+#Calculatrice.nav-link:hover, #Calculatrice.nav-link:focus {
+	color: #00004d;
+	background-color: #6EF1B7;
+	border: 3px solid;
+	border-color: #e9ecef #e9ecef #30EA98;
+	height:100%;
+}
+
+#Calculatrice.nav-link.active {
+	color: #00004d;
+	border: 6px solid;
+	background-color: #30EA98;
+	border-color: #1EB472 #0D6940 #30EA98 #1EB472;
+	height:109%;
+	
+	
+}
+
+h1 {
+	font-family: Arial;
+	font-style: b;
+	color: #00004d;
+	font-weight: 600;
+	font-size: 3em;
+}
+
+h2 {
+	font-family: Arial;
+	font-style: b;
+	color: #00004d;
+	font-weight: 600;
+	font-size:2.1em;
+}
+
+h3 {
+	font-family: Arial;
+	font-style: b;
+	color: #00004d;
+	font-weight: 600;
+}
+
+.container-fluid { /*container avec bordure*/
+	background-color: #4CCFCF;
+	border: 6px outset;
+	margin-left: 8px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-right:8px;
+	border-color: #2eb8b8;
+	width:98%;
+}
+
+.paragraph-block { /*container sans bordure mais avec alignement images-texte + vertical alignement*/
+	display: flex;
+	align-items: center;
+	border:0px;
+	margin-left: 8px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-right: 8px;
+}
+
+#cadre_general { /*container-fluid englobant toute la page*/
+	background-color: transparent;
+	border-color: transparent;
+	padding:10px;
+	
+	display: block;
+}
+
+#cadre_content { /*container-fluid englobant le contenu d'une page, avec bordure*/
+	margin-top: 0px;
+	text-align: justify;
+	text-justify: inter-word;
+	
+	display: block;
+}
+
+#cadre_contacts { /*container-fluid englobant la partie "contact"*/
+	margin-top: 0px;
+	padding: 10px;
+	
+	display: block;
+}
+
+.container { /*container avec bordure*/
+	background-color: #e6fffa;
+	border: 6px outset;
+	margin-left: auto;
+	margin-right:auto;
+	border-color: #2eb8b8;
+	width:470px;
+	text-align: center;
+}
+
+button {
+	width: 100px;
+	height: 60px;
+	background-color:#B8DFC9;
+	
+}
+
+#button_0, #button_1, #button_2, #button_3, #button_4, #button_5, #button_6, #button_7, #button_8, #button_9 {
+	background-color:#ADEBC9;
+}
+
+button:hover, button:focus{
+	background-color:#B8DFC9;
+}
+
+
+
+#display_resultat {
+	font-size: 1.5em;
+	font-family:Arial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

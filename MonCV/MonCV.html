@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	<title>CV Alexandre Heurion</title>
+	<!-- import des jquery ajax : -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- imports supplémentaires : -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	
+	<!-- scripts en ready : -->
+	<script language="javascript">
+		$(document).ready(function(){
+			$(document).click(function(){
+				<!-- Vérifie si Calculatrice est actif ou non, pour changer la couleur : -->
+				if($("#Calculatrice").hasClass("active")){
+					$("#cadre_content").css("background-color","#30EA98").css("border-color","#1EB472");
+					$("#cadre_contacts").hide();
+				}else{
+					$("#cadre_content").css("background-color","#4CCFCF").css("border-color","#2eb8b8");
+					$("#cadre_contacts").show();
+				}
+			});
+			$("button").click(function(){
+				$("#display_resultat").value="test";
+			});
+		});
+		
+		
+	</script>
+	
+	
+  </head>
+  
+  <body style="background-color:#e6fffa">
+	<div class="container-fluid" id="cadre_general">	
+	
+		<h1>Mon CV HTML en quelques clics</h1><br>
+  	
+		<ul class="nav nav-tabs nav-justified" id="TableauGeneralBox" role="tablist">
+		
+			<li class="nav-item">
+				<a class="nav-link active" id="PresentationBox" data-toggle="tab" href="#PresentationContent" role="tab" aria-controls="PresentationContent" aria-selected="true">Présentation</a>
+			</li>
+		
+			<li class="nav-item">
+				<a class="nav-link" id="ExperienceProBox" data-toggle="tab" href="#ExperienceProContent" role="tab" aria-controls="ExperienceProContent" aria-selected="false" style="white-space: nowrap;">Expérience Professionnelle</a>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link" id="CursusBox" data-toggle="tab" href="#CursusContent" role="tab" aria-controls="CursusContent" aria-selected="false">Cursus</a>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link" id="ExtrasBox" data-toggle="tab" href="#ExtrasContent" role="tab" aria-controls="ExtrasContent" aria-selected="false">Extras</a>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link" id="Calculatrice" data-toggle="tab" href="#CalculatriceContent" role="tab" aria-controls="CalculatriceContent" aria-selected="false">Calculatrice</a>
+			</li>
+		
+		</ul>
+	
+		<div class="container-fluid" id="cadre_content">	
+	
+			<div class="tab-content" id="TableauGeneralContent">
+				<br>
+				
+				<div class="tab-pane fade show active" id="PresentationContent" role="tabpanel" aria-labelledby="Presentation-tab">
+					<div class="container-fluid paragraph-block" style="padding:20px;border:0px" width="98%">
+						<img src="images/photo_CV_3.jpg" alt="Photo CV Alexandre HEURION" width="220" style="margin-right:20px;border: 6px outset;border-color: #2eb8b8;"></img>
+						<span style="display:inline-block;margin-bottom:50px">
+							<h2>Alexandre HEURION</h2>
+							<q><i> Mais si la route gêne pour le re-méandrage, pourquoi on n'enlèverait pas la route tout simplement ? </i></q>
+						</span>
+					</div>
+					<br>
+					<div class="container-fluid" style="padding:20px">
+						<div class="container-fluid paragraph-block" style="padding:20px">
+							<span style="display:inline-block">Ma formation <strong>généraliste</strong> scientifique dans <strong>l'aménagement du territoire</strong> me permet d'apréhender n'importe quel sujet avec suffisamment de <strong>recul</strong> pour apporter ma vision des choses aux projets que je rejoints. Je peux ainsi mettre en évidence des problèmes fondamentaux restés innaperçus par des spécialistes.</span>
+							<img src="images/multi_tasks.png" alt="Image multidisciplinarity" width="220" style="padding-left:30px;"></img>
+						</div>
+						<br>
+						<div class="container-fluid paragraph-block" style="padding:20px">
+							<img src="images/adaptability.png" alt="image caméléon" width="300" style="padding-right:30px"></img>
+							<span style="display:inline-block;">Ma <strong>capacité d'adaptation</strong> et ma patience me permettent également d'aborder n'importe quelle situation et n'importe quel imprévu avec <strong>calme</strong> et <strong>réactivité</strong>.</span>
+						</div>
+					</div>
+					<br>
+				</div>
+				
+				<div class="tab-pane fade" id="ExperienceProContent" role="tabpanel" aria-labelledby="Experience-tab">
+					<div class="container-fluid" style="padding:20px">
+						<div class="container-fluid paragraph-block" style="padding:20px">
+							<span style="display:inline-block">
+								<h2>Expérience Professionnelle :</h2>
+								<ul>
+									<li>Expérience de <strong>salarié Ingénieur</strong> junior en marchés publics, <strong>accompagnement des collectivités</strong> sur un plan technique, administratif, juridique et financier</li>
+									<li><strong>Diagnostic Territorial</strong> (étude pluridisciplinaire d’un territoire large de 14 communes) dans une équipe de 11 personnes, <strong>Projet Professionnel</strong> d’une durée de <strong>6 mois</strong></li>
+									<li>Participation au concours <q> <strong>Campus Création</strong> </q> de création d’entreprise</li>
+									<li>Nombreuses <strong>visites sur chantiers et en entreprise</strong> bâtiments, transport et énergie dans le but d’apprécier les différentes tâches possibles d’un ingénieur ENTPE suivant les secteurs de métiers</li>
+								</ul>
+							</span>
+						</div>
+					</div>
+					<br>
+					<div class="container-fluid" style="padding:20px">
+						<div class="container-fluid paragraph-block" style="padding:20px">
+							<span style="display:inline-block">
+								<h2>Compétences :</h2>
+								<ul>
+									<li>Bonne capacité à <strong>travailler en groupe</strong>,</li>
+									<li>Bonnes capacités de <strong>synthèse</strong> et d’<strong>analyse</strong> de problématiques sur <strong>toute échelle</strong>, de l’organisation locale à celle d’une région,</li>
+									<li>Très bonne <strong>logique et compréhension</strong>,</li>
+									<li>Spécialisation <strong>Ville-Environnement, Risques et Pollution</strong></li>
+								</ul>
+							</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tab-pane fade" id="CursusContent" role="tabpanel" aria-labelledby="Cursus-tab">
+					<div class="container-fluid" style="padding:20px">
+						<div class="container-fluid paragraph-block" style="padding:20px">
+							<span style="display:inline-block">
+								<h2>Cursus :</h2>
+								<ul>
+									<li><strong>Salarié Ingénieur Études-Conseil</strong> – 6 mois - Aquilex</li>
+									<li><strong>Stage et Travail de Fin d’Études</strong> (TFE) – 5 mois – Aquilex – Gestion patrimoniale des infrastructures d’assainissement</li>
+									<li>Troisième année <strong>ENTPE</strong> – double cursus <strong>Master GRAINE</strong> (gestion des ressources naturelles et paysagères) avec <strong>Université Lyon 2</strong></li>
+									<li>Année supplémentaire <strong>ENTPE</strong> (Ecole Nationale de l’Aménagement Durable du Territoire) – <strong>Stage MSP</strong> (Mise en Situation Professionnelle) – 5 mois – Service Exploitation AIVE (Belgique) – Optimisations opérationnelles diverses pour l’Assainissement</li>
+									<li><strong>Stage MSP – 5 mois</strong> – Direction de la Protection et Sécurité Publique à SaintFons (17.000 habitants) – <strong>élaboration et amélioration</strong> d’outils de prévention (document d’information communal à la population) et de gestion de crise sur les <strong>Risques Majeurs</strong> (Plan Communal de Sauvegarde)</li>
+									<li>Deuxième année <strong>ENTPE</strong></li>
+									<li><strong>Stage IMP</strong> (Insertion en Milieu Professionnel) – 2 mois – services techniques de la Ville - Ile d’Olonne</li>
+									<li>Première année <strong>ENTPE</strong>, suite au <strong>concours Géologie, Eau et Environnement</strong></li>
+									<li>Cours préparatoires aux grandes écoles filière <strong>BCPST</strong> (Biologie Chimie Physique et Science de la Terre) – 2 ans – Lycée agricole Lefresne à Angers</li>
+								</ul>
+							</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tab-pane fade" id="ExtrasContent" role="tabpanel" aria-labelledby="Extras-tab">
+					<div class="container-fluid" style="padding:20px">
+						<div class="container-fluid paragraph-block" style="padding:20px">
+							<span style="display:inline-block">
+								<h2>Certifications :</h2>
+								<ul>
+									<li><strong>Très bon niveau en anglais</strong> (certification du TOEIC)</li>
+									<li><strong>bon niveau en espagnol</strong> (certification DELE B1)</li>
+									<li>Permis de conduire (B)</li>
+								</ul>
+							</span>
+						</div>
+					</div>
+					<br>
+					<div class="container-fluid" style="padding:20px">
+						<div class="container-fluid paragraph-block" style="padding:20px">
+							<span style="display:inline-block">
+								<h2>Outils informatiques :</h2>
+								<ul>
+									<li>Qgis</li>
+									<li>MATLAB</li>
+									<li>Office</li>
+									<li>LaTeX</li>
+								</ul>
+							</span>
+						</div>
+					</div>
+					<br>
+					<div class="container-fluid" style="padding:20px">
+						<div class="container-fluid paragraph-block" style="padding:20px">
+							<span style="display:inline-block">
+								<h2>Voyages :</h2>
+								<ul>
+									<li>Islande (voyage d’étude géologique)</li>
+									<li>Angleterre, Espagne et Italie (dans le cadre des cours d’anglais, d’espagnol et de latin)</li>
+									<li>France (voyages dans de nombreuses régions pour leur intérêt culturel, environnemental, naturel, etc.)</li>
+									<li>Belgique et Luxembourg (voyages personnels et récurrents)</li>
+									<li>Espagne et Italie (voyages personnels et occasionnels)</li>
+								</ul>
+							</span>
+						</div>
+					</div>
+					<br>
+					<div class="container-fluid" style="padding:20px">
+						<div class="container-fluid paragraph-block" style="padding:20px">
+							<span style="display:inline-block">
+								<h2>Centres d'intérêt :</h2>
+								<ul>
+									<li>Assainissement</li>
+									<li>Natures et Paysages</li>
+									<li>Informatique</li>
+									<li>Cartographie numérique</li>
+								</ul>
+								<br>
+								<ul>
+									<li>Badminton (ex-responsable du club de l’ENTPE)</li>
+									<li>Jeux de société, stratégie, coopération, etc... (ex-responsable du club de l’ENTPE)</li>
+									<li>Judo (ceinture verte)</li>
+									<li>Voile (habitable et catamaran)</li>
+									<li>Dessin</li>
+								</ul>
+							</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tab-pane fade" id="CalculatriceContent" role="tabpanel" aria-labelledby="Calculatrice-tab">
+					<div class="container">
+						<br><br>
+						<input id="display_resultat" type="text" disabled value="0 " style="text-align:right"></input>
+						<br><br>
+						
+						<button id="button_CE" value="CE">CE</button><button id="button_suppr" value="suppr"><==</button><button id="button_power" value="power">^</button><button id="button_div" value="div">/</button><br>
+						
+						<button id="button_7" value=7>7</button><button id="button_8" value=8>8</button><button id="button_9" value=9>9</button><button id="button_mult" value="mult">X</button><br>
+						
+						<button id="button_4" value=4>4</button><button id="button_5" value=5>5</button><button id="button_6" value=6>6</button><button id="button_moins" value="moins">-</button><br>
+						
+						<button id="button_1" value=1>1</button><button id="button_2" value=2>2</button><button id="button_3" value=3>3</button><button id="button_plus" value="plus">+</button><br>
+						
+						<button id="button_PI" value=3.14>PI</button><button id="button_0" value=0>0</button><button id="button_virg" value="virg">,</button><button id="button_equal">=</button><br>
+						<br>
+					</div>
+					<br>
+				</div>
+				
+			</div>
+			
+		</div>
+	
+		<br>
+	
+		<div class="container-fluid" id="cadre_contacts">
+			<h3>Contacts :</h3>
+			Vous pourrez me contacter par messagerie électronique à l'adresse suivante : <a style="color:black;font-weight:700" href="mailto:alex85h2@caramail.fr">alex85h2@caramail.fr</a><br>
+			Je suis également joignable à tout moment par téléphone au : <b>06 85 38 81 64</b>
+			
+		</div>
+	
+	</div>
+	
+    <!-- Optional JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
